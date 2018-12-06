@@ -14,7 +14,7 @@ Error messages are listed alphabetically, and as such are organised by error typ
 ### Attribute Errors:
 #### AttributeError: type object 'Qgis' has no attribute 'Line'
 
-To fix: rename `QGis.Line` to `QgsWkbTypes.LineGeometry`
+To fix: replace `QGis.Line` with `QgsWkbTypes.LineGeometry`
 
 e.g.
 ```python
@@ -55,7 +55,7 @@ and [QGIS breaking changes 'General changes' section](https://qgis.org/api/api_b
 ---
 #### AttributeError: type object 'QgsGeometry' has no attribute 'fromMultiPolyline'
 
-To fix: rename `QgsGeometry.fromMultiPolyline([qgs_point_list])` to `QgsGeometry.fromMultiPolylineXY([qgs_pointXY_list])`
+To fix: replace `QgsGeometry.fromMultiPolyline([qgs_point_list])` with `QgsGeometry.fromMultiPolylineXY([qgs_pointXY_list])`
 
 e.g.
 ```python
@@ -178,7 +178,7 @@ See also: [QGIS Python API doc for qgis.core.QgsGeometry.fromPointXY()](https://
 ---
 #### AttributeError: 'QgsGeometry' object has no attribute 'exportToWkt'
 
-To fix: rename `.exportToWkt()` to `.asWkt()`
+To fix: replace `.exportToWkt()` with `.asWkt()`
 
 See also: [QGIS Python API doc for qgis.core.QgsGeometry.asWkt()](https://qgis.org/pyqgis/3.2/core/Geometry/QgsGeometry.html#qgis.core.QgsGeometry.asWkt)
 
@@ -241,7 +241,7 @@ See also: [QGIS Python API doc for qgis.core.QgsSingleSymbolRenderer.symbol()](h
 ----
 #### AttributeError: 'QgsVectorLayer' object has no attribute 'setRendererV2'
 
-To fix: rename `layer.setRendererV2(renderer)` to `.setRenderer(renderer)`
+To fix: replace `.setRendererV2(renderer)` with `.setRenderer(renderer)`
 
 e.g.
 ```python
@@ -281,7 +281,7 @@ and [QGIS breaking changes for Qgis](https://qgis.org/api/api_break.html#qgis_ap
 ### Type Errors:
 #### TypeError: QgisInterface.newProject(): 'thePromptToSaveFlag' is not a valid keyword argument
 
-To fix: rename `thePromptToSaveFlag` to `promptToSaveFlag`
+To fix: replace `thePromptToSaveFlag` with `promptToSaveFlag`
 
 e.g.
 ```python
