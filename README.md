@@ -32,10 +32,6 @@ See also: [QGIS Python API doc for qgis.core.QgsWkbTypes.LineGeometry](https://q
 
 replace `Qgis.WKBType` with `QgsWkbTypes.Type`
 
-> All methods taking or returning `QGis::WkbType` have been changed to use `QgsWkbTypes::Type`
-
-Source: [QGIS breaking changes](https://qgis.org/api/api_break.html#qgis_api_break_3_0_global)
-
 e.g.
 ```python
 Qgis.WKBPolygon 
@@ -51,6 +47,8 @@ QgsWkbTypes.Point
 ```
 
 See also: [QGIS Python API doc for qgis.core.QgsWkbTypes()](https://qgis.org/pyqgis/3.2/core/Wkb/QgsWkbTypes.html)
+
+and [QGIS breaking changes 'General changes' section](https://qgis.org/api/api_break.html#qgis_api_break_3_0_global)
 
 
 ---
