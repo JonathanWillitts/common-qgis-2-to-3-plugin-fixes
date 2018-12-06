@@ -31,7 +31,7 @@ See also: [QGIS Python API doc for qgis.core.QgsWkbTypes.LineGeometry](https://q
 #### AttributeError: type object 'Qgis' has no attribute 'WKBPolygon'
 #### AttributeError: type object 'Qgis' has no attribute 'WKBPoint'
 
-To fix: replace `Qgis.WKBType` with `QgsWkbTypes.Type`
+To fix: replace `Qgis.WKB<Type>` with `QgsWkbTypes.<Type>`
 
 e.g.
 ```python
@@ -55,7 +55,7 @@ and [QGIS breaking changes 'General changes' section](https://qgis.org/api/api_b
 ---
 #### AttributeError: type object 'QgsGeometry' has no attribute 'fromMultiPolyline'
 
-To fix: replace `QgsGeometry.fromMultiPolyline([qgs_point_list])` with `QgsGeometry.fromMultiPolylineXY([qgs_pointXY_list])`
+To fix: replace `.fromMultiPolyline([qgs_point_list])` with `.fromMultiPolylineXY([qgs_pointXY_list])`
 
 e.g.
 ```python
@@ -144,7 +144,7 @@ and [this GIS Stack Exchange answer](https://gis.stackexchange.com/a/272547/1066
 ---
 #### AttributeError: 'QgsLayerTree' object has no attribute 'selectedLayers'
 
-To fix: replace `legendInterface()` with `layerTreeView()`
+To fix: replace `.legendInterface()` with `.layerTreeView()`
 
 e.g.
 ```python
@@ -162,7 +162,7 @@ and [QGIS breaking changes for QgsGeometry](https://qgis.org/api/api_break.html#
 ---
 #### AttributeError: type object 'QgsGeometry' has no attribute 'fromPoint'
 
-To fix: replace `QgsGeometry.fromPoint()` with `QgsGeometry.fromPointXY()`
+To fix: replace `.fromPoint()` with `.fromPointXY()`
 
 e.g.
 ```python
@@ -210,7 +210,7 @@ See also: [QGIS Python API doc for qgis.core.QgsVectorLayer.setMapTipTemplate()]
 ---
 #### AttributeError: 'QgsVectorLayer' object has no attribute 'setLayerTransparency'
 
-To fix: replace `.setLayerTransparancy(percentage)` with `setOpacity(percentage / 100)`
+To fix: replace `.setLayerTransparancy(percentage)` with `.setOpacity(percentage / 100)`
 
 e.g.
 ```python
