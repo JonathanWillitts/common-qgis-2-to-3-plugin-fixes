@@ -106,6 +106,7 @@ Qgis.Success
 
 See also: [QGIS API doc for Qgis.MessageLevel](https://qgis.org/api/classQgis.html#a60c079f4d8b7c479498be3d42ec96257)
 
+and [QGIS breaking changes for QgsMessageLevel](https://qgis.org/api/api_break.html#qgis_api_break_3_0_QgsMessageBar)
 
 ---
 #### AttributeError: type object 'QgsSymbolLayerRegistry' has no attribute 'instance'
