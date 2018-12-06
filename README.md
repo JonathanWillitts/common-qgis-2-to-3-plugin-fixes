@@ -13,7 +13,8 @@ Error messages are listed below alphabetically, and as such are organised by err
 ---
 ### Attribute Errors:
 #### AttributeError: type object 'Qgis' has no attribute 'Line'
-rename `QGis.Line` to `QgsWkbTypes.LineGeometry`
+
+To fix: rename `QGis.Line` to `QgsWkbTypes.LineGeometry`
 
 e.g.
 ```python
@@ -30,7 +31,7 @@ See also: [QGIS Python API doc for qgis.core.QgsWkbTypes.LineGeometry](https://q
 #### AttributeError: type object 'Qgis' has no attribute 'WKBPolygon'
 #### AttributeError: type object 'Qgis' has no attribute 'WKBPoint'
 
-replace `Qgis.WKBType` with `QgsWkbTypes.Type`
+To fix: replace `Qgis.WKBType` with `QgsWkbTypes.Type`
 
 e.g.
 ```python
@@ -54,7 +55,7 @@ and [QGIS breaking changes 'General changes' section](https://qgis.org/api/api_b
 ---
 #### AttributeError: type object 'QgsGeometry' has no attribute 'fromMultiPolyline'
 
-rename `QgsGeometry.fromMultiPolyline([qgs_point_list])` to `QgsGeometry.fromMultiPolylineXY([qgs_pointXY_list])`
+To fix: rename `QgsGeometry.fromMultiPolyline([qgs_point_list])` to `QgsGeometry.fromMultiPolylineXY([qgs_pointXY_list])`
 
 e.g.
 ```python
@@ -75,7 +76,7 @@ and [QGIS breaking changes for QgsGeometry](https://qgis.org/api/api_break.html#
 #### AttributeError: type object 'QgsMessageBar' has no attribute 'CRITICAL'
 #### AttributeError: type object 'QgsMessageBar' has no attribute 'SUCCESS'
 
-replace `QgsMessageBar.<MessageLevel>` with `Qgis.<MessageLevel>`
+To fix: replace `QgsMessageBar.<MessageLevel>` with `Qgis.<MessageLevel>`
 
 e.g.
 ```python
@@ -109,7 +110,7 @@ See also: [QGIS API doc for Qgis.MessageLevel](https://qgis.org/api/classQgis.ht
 ---
 #### AttributeError: type object 'QgsSymbolLayerRegistry' has no attribute 'instance'
 
-Replace `QgsSymbolLayerRegistry.instance()` with `QgsApplication.symbolLayerRegistry()`
+To fix: replace `QgsSymbolLayerRegistry.instance()` with `QgsApplication.symbolLayerRegistry()`
 
 e.g.
 ```python
@@ -125,7 +126,7 @@ See also: [QGIS Python API doc for qgis.core.QgsApplication.symbolLayerRegistry(
 ---
 #### AttributeError: 'QgisInterface' object has no attribute 'legendInterface'
 
-reference the layer (by `id`) within the `layerTreeRoot`, and set visibility there.
+To fix: reference the layer (by `id`) within the `layerTreeRoot`, and set visibility there.
 
 e.g.
 ```python
@@ -143,7 +144,7 @@ and [this GIS Stack Exchange answer](https://gis.stackexchange.com/a/272547/1066
 ---
 #### AttributeError: 'QgsLayerTree' object has no attribute 'selectedLayers'
 
-replace `legendInterface()` with `layerTreeView()`
+To fix: replace `legendInterface()` with `layerTreeView()`
 
 e.g.
 ```python
@@ -161,7 +162,7 @@ and [QGIS breaking changes for QgsGeometry](https://qgis.org/api/api_break.html#
 ---
 #### AttributeError: type object 'QgsGeometry' has no attribute 'fromPoint'
 
-replace `QgsGeometry.fromPoint()` with `QgsGeometry.fromPointXY()`
+To fix: replace `QgsGeometry.fromPoint()` with `QgsGeometry.fromPointXY()`
 
 e.g.
 ```python
@@ -177,7 +178,7 @@ See also: [QGIS Python API doc for qgis.core.QgsGeometry.fromPointXY()](https://
 ---
 #### AttributeError: 'QgsGeometry' object has no attribute 'exportToWkt'
 
-rename `.exportToWkt()` to `.asWkt()`
+To fix: rename `.exportToWkt()` to `.asWkt()`
 
 See also: [QGIS Python API doc for qgis.core.QgsGeometry.asWkt()](https://qgis.org/pyqgis/3.2/core/Geometry/QgsGeometry.html#qgis.core.QgsGeometry.asWkt)
 
@@ -185,7 +186,7 @@ See also: [QGIS Python API doc for qgis.core.QgsGeometry.asWkt()](https://qgis.o
 ---
 #### AttributeError: 'QgsPalLayerSettings' object has no attribute 'readFromLayer'
 
-refer to [this GIS Stack Exchange answer](https://gis.stackexchange.com/a/273268/106634)
+To fix: refer to [this GIS Stack Exchange answer](https://gis.stackexchange.com/a/273268/106634)
 
 and [QGIS breaking changes for QgsPalLayerSettings](https://qgis.org/api/api_break.html#qgis_api_break_3_0_QgsPalLayerSettings)
 
@@ -193,7 +194,7 @@ and [QGIS breaking changes for QgsPalLayerSettings](https://qgis.org/api/api_bre
 ---
 #### AttributeError: 'QgsVectorLayer' object has no attribute 'setDisplayField'
 
-replace `.setDisplayField(html)` with `.setMapTipTemplate(html)`
+To fix: replace `.setDisplayField(html)` with `.setMapTipTemplate(html)`
 
 e.g.
 ```python
@@ -209,7 +210,7 @@ See also: [QGIS Python API doc for qgis.core.QgsVectorLayer.setMapTipTemplate()]
 ---
 #### AttributeError: 'QgsVectorLayer' object has no attribute 'setLayerTransparency'
 
-replace `.setLayerTransparancy(percentage)` with `setOpacity(percentage / 100)`
+To fix: replace `.setLayerTransparancy(percentage)` with `setOpacity(percentage / 100)`
 
 e.g.
 ```python
@@ -223,7 +224,7 @@ layer.setOpacity(0.6)
 ---
 #### AttributeError: 'QgsVectorLayer' object has no attribute 'rendererV2'
 
-Replace `.rendererV2().symbols()` with `.renderer().symbol()` and access the symbol directly
+To fix: replace `.rendererV2().symbols()` with `.renderer().symbol()` and access the symbol directly
 
 e.g. 
 ```python
@@ -240,7 +241,7 @@ See also: [QGIS Python API doc for qgis.core.QgsSingleSymbolRenderer.symbol()](h
 ----
 #### AttributeError: 'QgsVectorLayer' object has no attribute 'setRendererV2'
 
-rename `layer.setRendererV2(renderer)` to `.setRenderer(renderer)`
+To fix: rename `layer.setRendererV2(renderer)` to `.setRenderer(renderer)`
 
 e.g.
 ```python
@@ -279,7 +280,8 @@ and [QGIS breaking changes for Qgis](https://qgis.org/api/api_break.html#qgis_ap
 ---
 ### Type Errors:
 #### TypeError: QgisInterface.newProject(): 'thePromptToSaveFlag' is not a valid keyword argument
-rename `thePromptToSaveFlag` to `promptToSaveFlag`
+
+To fix: rename `thePromptToSaveFlag` to `promptToSaveFlag`
 
 e.g.
 ```python
@@ -300,7 +302,7 @@ overload 1: argument 1 has unexpected type 'QFileInfo'
 overload 2: too many arguments
 ```
 
-remove `QFileInfo` and just pass string to `QgsProject.read()`
+To fix: remove `QFileInfo` and just pass string to `QgsProject.read()`
 
 e.g.
 ```python
@@ -324,7 +326,7 @@ See also: [QGIS Python API doc for qgis.core.QgsProject.read()](https://qgis.org
   overload 5: argument 1 has unexpected type 'QgsPoint'
 ```
   
-replace instances of `QgsPoint` with `QgsPointXY`
+To fix: replace instances of `QgsPoint` with `QgsPointXY`
 
 e.g.
 ```python
@@ -340,7 +342,7 @@ See also: [QGIS Python API doc for qgis.core.QgsRectangle()](https://qgis.org/py
 ---
 #### TypeError: QgsRubberBand.addPoint(): argument 1 has unexpected type 'QgsPoint'
 
-replace instances of `QgsPoint` with `QgsPointXY`
+To fix: replace instances of `QgsPoint` with `QgsPointXY`
 
 e.g.
 ```python
