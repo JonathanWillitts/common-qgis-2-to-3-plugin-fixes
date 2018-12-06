@@ -143,7 +143,7 @@ and [this GIS Stack Exchange answer](https://gis.stackexchange.com/a/272547/1066
 ---
 #### AttributeError: 'QgsLayerTree' object has no attribute 'selectedLayers'
 
-replace legendInterface() with layerTreeView()
+replace `legendInterface()` with `layerTreeView()`
 
 e.g.
 ```python
