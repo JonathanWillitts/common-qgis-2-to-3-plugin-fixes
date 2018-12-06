@@ -123,6 +123,8 @@ QgsApplication.symbolLayerRegistry()
 
 See also: [QGIS Python API doc for qgis.core.QgsApplication.symbolLayerRegistry()](https://qgis.org/pyqgis/3.2/core/other/QgsApplication.html#qgis.core.QgsApplication.symbolLayerRegistry)
 
+and [QGIS breaking changes for QgsSymbolLayerRegistry](https://qgis.org/api/api_break.html#qgis_api_break_3_0_QgsSymbolLayerRegistry)
+
 
 ---
 #### AttributeError: 'QgisInterface' object has no attribute 'legendInterface'
