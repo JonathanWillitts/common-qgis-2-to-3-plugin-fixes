@@ -2,13 +2,13 @@
 
 Below is a list of fixes to common QGIS migration issues I collated whilst migrating a QGIS 2.18 plugin to QGIS 3.2 (and then to 3.4).  I documented each error message and fix to make things easier in case I came across the same issue again, and subsequently figured it may be of user to others who were migrating their plugins too. 
 
-Details of error messages are documented as sub-headings, with the fixes and examples listed underneath.  Where possible I've included links back to relevant documentation too.
-
 
 
 ## Error messages and fixes
 
-Error messages are listed below alphabetically, and as such are organised by error type (`AttributeError`, `NameError`, `TypeError`).  
+Details of error messages are documented as sub-headings, with fixes and examples for each listed underneath.  Where possible I've included links back to relevant documentation too.  
+
+Error messages are listed alphabetically, and as such are organised by error type (`AttributeError`, `NameError`, `TypeError`).  
  
 ---
 ### Attribute Errors:
