@@ -1,6 +1,6 @@
 # Fixes to common problems when migrating QGIS plugins from v2.18 to v3.x
 
-Below is a list of fixes to common QGIS migration issues I collated whilst migrating a QGIS 2.18 plugin to QGIS 3.2 (and then to 3.4).  I documented each error message and fix to make things easier in case I came across the same issue again, and subsequently figured it may be of user to others who were migrating their plugins too. 
+Below is a list of fixes to common QGIS migration issues I collated whilst migrating a QGIS 2.18 plugin to QGIS 3.2 (and then to 3.4).  I documented each error message and fix to make things easier if I came across the same issue again, and subsequently figured it may be of user to others who were migrating their plugins too. 
 
 
 
@@ -11,30 +11,20 @@ Details of error messages are documented as sub-headings, with fixes and example
 Error messages are listed alphabetically, and as such are organised by error type (`AttributeError`, `NameError`, `TypeError`).  
  
 ---
-### Attribute Errors:
 #### AttributeError: type object 'Qgis' has no attribute 'Line'
+#### AttributeError: type object 'Qgis' has no attribute 'WKBPoint'
+#### AttributeError: type object 'Qgis' has no attribute 'WKBPolygon'
 
-To fix: replace `QGis.Line` with `QgsWkbTypes.LineGeometry`
+To fix: replace `Qgis.<Old Type>` with `QgsWkbTypes.<New Type>`
 
 e.g.
 ```python
-QgsRubberBand(self.canvas, QGis.Line)
+QGis.Line
 
 # becomes
-QgsRubberBand(self.canvas, QgsWkbTypes.LineGeometry)
-```
-
-See also: [QGIS Python API doc for qgis.core.QgsWkbTypes.LineGeometry](https://qgis.org/pyqgis/3.2/core/Wkb/QgsWkbTypes.html#qgis.core.QgsWkbTypes.LineGeometry)
+QgsWkbTypes.LineGeometry
 
 
----
-#### AttributeError: type object 'Qgis' has no attribute 'WKBPolygon'
-#### AttributeError: type object 'Qgis' has no attribute 'WKBPoint'
-
-To fix: replace `Qgis.WKB<Type>` with `QgsWkbTypes.<Type>`
-
-e.g.
-```python
 Qgis.WKBPolygon 
 
 # becomes
