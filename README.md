@@ -170,6 +170,8 @@ QgsGeometry.fromPointXY(qgs_point_xy)
 
 See also: [QGIS Python API doc for qgis.core.QgsGeometry.fromPointXY()](https://qgis.org/pyqgis/3.2/core/Geometry/QgsGeometry.html#qgis.core.QgsGeometry.fromPointXY)
 
+and [QGIS breaking changes for QgsGeometry](https://qgis.org/api/api_break.html#qgis_api_break_3_0_QgsGeometry)
+
 
 ---
 #### AttributeError: 'QgsGeometry' object has no attribute 'exportToWkt'
