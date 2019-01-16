@@ -11,6 +11,7 @@ Details of error messages are documented as sub-headings, with fixes and example
 Error messages are listed alphabetically, and as such are organised by error type (`AttributeError`, `NameError`, `TypeError`).  
  
 ---
+### Attribute Errors:
 #### AttributeError: type object 'Qgis' has no attribute 'Line'
 #### AttributeError: type object 'Qgis' has no attribute 'WKBPoint'
 #### AttributeError: type object 'Qgis' has no attribute 'WKBPolygon'
