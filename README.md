@@ -180,6 +180,8 @@ To fix: replace `.exportToWkt()` with `.asWkt()`
 
 See also: [QGIS Python API doc for qgis.core.QgsGeometry.asWkt()](https://qgis.org/pyqgis/3.2/core/Geometry/QgsGeometry.html#qgis.core.QgsGeometry.asWkt)
 
+and [QGIS breaking changes for QgsGeometry](https://qgis.org/api/api_break.html#qgis_api_break_3_0_QgsGeometry)
+
 
 ---
 #### AttributeError: 'QgsPalLayerSettings' object has no attribute 'readFromLayer'
