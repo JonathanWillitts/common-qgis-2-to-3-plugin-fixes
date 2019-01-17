@@ -279,6 +279,33 @@ and [QGIS breaking changes for Qgis](https://qgis.org/api/api_break.html#qgis_ap
 
 ---
 ### Type Errors:
+#### TypeError: QgsCoordinateTransform(): arguments did not match any overloaded call:
+
+```
+  overload 1: too many arguments
+  overload 2: not enough arguments
+  overload 3: not enough arguments
+  overload 4: not enough arguments
+  overload 5: argument 1 has unexpected type 'QgsCoordinateReferenceSystem'
+```
+  
+To fix: add `QgsProject.instance()` to `QgsCoordinateTransform()` call
+
+e.g.
+```python
+xform = QgsCoordinateTransform(src_crs, dest_crs)
+
+
+# becomes
+xform = QgsCoordinateTransform(src_crs, dest_crs, QgsProject.instance())
+```
+
+See also: [QGIS Python API doc for qgis.core.QgsCoordinateTransform()](https://qgis.org/pyqgis/3.4/core/Coordinate/QgsCoordinateTransform.html)
+
+and [QGIS breaking changes for QgsCoordinateTransform](https://qgis.org/api/api_break.html#qgis_api_break_3_0_QgsCoordinateTransform)
+
+
+---
 #### TypeError: QgisInterface.newProject(): 'thePromptToSaveFlag' is not a valid keyword argument
 
 To fix: replace `thePromptToSaveFlag` with `promptToSaveFlag`
