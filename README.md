@@ -320,6 +320,8 @@ project.read(project_file)
 
 See also: [QGIS Python API doc for qgis.core.QgsProject.read()](https://qgis.org/pyqgis/3.2/core/Project/QgsProject.html?#qgis.core.QgsProject.read)
 
+and [QGIS breaking changes for QgsProject](https://qgis.org/api/api_break.html#qgis_api_break_3_0_QgsProject)
+
 
 ---
 #### TypeError: QgsRectangle(): arguments did not match any overloaded call:
