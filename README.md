@@ -206,6 +206,8 @@ layer.setMapTipTemplate(html)
 
 See also: [QGIS Python API doc for qgis.core.QgsVectorLayer.setMapTipTemplate()](https://qgis.org/pyqgis/3.2/core/Vector/QgsVectorLayer.html?#qgis.core.QgsVectorLayer.setMapTipTemplate)
 
+and [QGIS breaking changes for QgsVectorLayer](https://qgis.org/api/api_break.html#qgis_api_break_3_0_QgsVectorLayer)
+
 
 ---
 #### AttributeError: 'QgsVectorLayer' object has no attribute 'setLayerTransparency'
@@ -219,6 +221,10 @@ layer.setLayerTransparency(60)
 # becomes
 layer.setOpacity(0.6)
 ```
+
+See also: [QGIS Python API doc for qgis.core.QgsVectorLayer.setOpacity()](https://qgis.org/pyqgis/3.4/core/Vector/QgsVectorLayer.html#qgis.core.QgsVectorLayer.setOpacity)
+
+and [QGIS breaking changes for QgsVectorLayer](https://qgis.org/api/api_break.html#qgis_api_break_3_0_QgsVectorLayer)
 
 
 ---
