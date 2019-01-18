@@ -47,7 +47,7 @@ Qgis.WKBPoint
 QgsWkbTypes.Point
 ```
 
-See also: [QGIS Python API doc for qgis.core.QgsWkbTypes()](https://qgis.org/pyqgis/3.2/core/Wkb/QgsWkbTypes.html)
+See also: [QGIS Python API doc for qgis.core.QgsWkbTypes](https://qgis.org/pyqgis/3.2/core/Wkb/QgsWkbTypes.html)
 
 and [QGIS breaking changes 'General changes' section](https://qgis.org/api/api_break.html#qgis_api_break_3_0_global)
 
@@ -300,7 +300,7 @@ xform = QgsCoordinateTransform(src_crs, dest_crs)
 xform = QgsCoordinateTransform(src_crs, dest_crs, QgsProject.instance())
 ```
 
-See also: [QGIS Python API doc for qgis.core.QgsCoordinateTransform()](https://qgis.org/pyqgis/3.4/core/Coordinate/QgsCoordinateTransform.html)
+See also: [QGIS Python API doc for qgis.core.QgsCoordinateTransform](https://qgis.org/pyqgis/3.4/core/Coordinate/QgsCoordinateTransform.html)
 
 and [QGIS breaking changes for QgsCoordinateTransform](https://qgis.org/api/api_break.html#qgis_api_break_3_0_QgsCoordinateTransform)
 
@@ -363,7 +363,7 @@ QgsRectangle(QgsPoint(x_min, y_min), QgsPoint(x_max, y_max)))
 QgsRectangle(QgsPointXY(x_min, y_min), QgsPointXY(x_max, y_max)))
 ```
 
-See also: [QGIS Python API doc for qgis.core.QgsRectangle()](https://qgis.org/pyqgis/3.2/core/other/QgsRectangle.html)
+See also: [QGIS Python API doc for qgis.core.QgsRectangle](https://qgis.org/pyqgis/3.2/core/other/QgsRectangle.html)
 
 
 ---
