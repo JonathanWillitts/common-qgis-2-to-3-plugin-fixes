@@ -346,6 +346,8 @@ QgsRectangle(QgsPointXY(x_min, y_min), QgsPointXY(x_max, y_max)))
 
 See also: [QGIS Python API doc for qgis.core.QgsRectangle()](https://qgis.org/pyqgis/3.2/core/other/QgsRectangle.html)
 
+and [QGIS breaking changes 'Renamed Classes' section](https://qgis.org/api/api_break.html#qgis_api_break_3_0_renamed_classes)
+
 
 ---
 #### TypeError: QgsRubberBand.addPoint(): argument 1 has unexpected type 'QgsPoint'
@@ -362,6 +364,7 @@ QgsPointXY(..., ...)
 
 See also: [QGIS Python API doc for qgis.gui.QgsRubberBand.addPoint()](https://qgis.org/pyqgis/3.2/gui/other/QgsRubberBand.html?#qgis.gui.QgsRubberBand.addPoint)
 
+and [QGIS breaking changes 'Renamed Classes' section](https://qgis.org/api/api_break.html#qgis_api_break_3_0_renamed_classes)
 
 
 ## See also:
