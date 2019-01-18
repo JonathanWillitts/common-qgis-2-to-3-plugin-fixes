@@ -132,7 +132,7 @@ QgsProject.instance().layerTreeRoot().findLayer(layer.id()).setItemVisibilityChe
 
 See also: [QGIS Python API doc for qgis.core.QgsLayerTreeNode.setItemVisibilityChecked()](https://qgis.org/pyqgis/3.2/core/Layer/QgsLayerTreeNode.html#qgis.core.QgsLayerTreeNode.setItemVisibilityChecked),
 
-[QGIS breaking changes 'Removed Classes' section](https://qgis.org/api/api_break.html#qgis_api_break_3_0_removed_classes)
+and [QGIS breaking changes 'Removed Classes' section](https://qgis.org/api/api_break.html#qgis_api_break_3_0_removed_classes)
 
 and [this GIS Stack Exchange answer](https://gis.stackexchange.com/a/272547/106634)
 
