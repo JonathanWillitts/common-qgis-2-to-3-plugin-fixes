@@ -243,6 +243,10 @@ symbol = layer.renderer().symbol()
 
 See also: [QGIS Python API doc for qgis.core.QgsSingleSymbolRenderer.symbol()](https://qgis.org/pyqgis/3.2/core/Single/QgsSingleSymbolRenderer.html#qgis.core.QgsSingleSymbolRenderer.symbol)
 
+and [QGIS Python API doc for qgis.core.QgsVectorLayer.setRenderer()](https://qgis.org/pyqgis/3.2/core/Vector/QgsVectorLayer.html#qgis.core.QgsVectorLayer.renderer)
+
+and [QGIS breaking changes 'Renamed Methods' section](https://qgis.org/api/api_break.html#qgis_api_break_3_0_renamed_methods)
+
 
 ----
 #### AttributeError: 'QgsVectorLayer' object has no attribute 'setRendererV2'
