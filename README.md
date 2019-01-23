@@ -1,6 +1,6 @@
 # Fixes to common problems when migrating QGIS plugins from v2.18 to v3.x
 
-Below is a list of fixes to common QGIS migration issues I collated whilst migrating a QGIS 2.18 plugin to QGIS 3.2 (and then to 3.4).  I documented each error message and fix to make things easier in case I came across the same issue again, and subsequently figured it may be of user to others who were migrating their plugins too. 
+Below is a list of fixes to common QGIS migration issues I collated whilst migrating a QGIS 2.18 plugin to QGIS 3.2 (and then to 3.4).  I documented each error message and fix to make things easier if I came across the same issue again, and subsequently figured it may be of user to others who were migrating their plugins too. 
 
 
 
@@ -13,28 +13,19 @@ Error messages are listed alphabetically, and as such are organised by error typ
 ---
 ### Attribute Errors:
 #### AttributeError: type object 'Qgis' has no attribute 'Line'
+#### AttributeError: type object 'Qgis' has no attribute 'WKBPoint'
+#### AttributeError: type object 'Qgis' has no attribute 'WKBPolygon'
 
-To fix: replace `QGis.Line` with `QgsWkbTypes.LineGeometry`
+To fix: replace `Qgis.<Old Type>` with `QgsWkbTypes.<New Type>`
 
 e.g.
 ```python
-QgsRubberBand(self.canvas, QGis.Line)
+QGis.Line
 
 # becomes
-QgsRubberBand(self.canvas, QgsWkbTypes.LineGeometry)
-```
-
-See also: [QGIS Python API doc for qgis.core.QgsWkbTypes.LineGeometry](https://qgis.org/pyqgis/3.2/core/Wkb/QgsWkbTypes.html#qgis.core.QgsWkbTypes.LineGeometry)
+QgsWkbTypes.LineGeometry
 
 
----
-#### AttributeError: type object 'Qgis' has no attribute 'WKBPolygon'
-#### AttributeError: type object 'Qgis' has no attribute 'WKBPoint'
-
-To fix: replace `Qgis.WKB<Type>` with `QgsWkbTypes.<Type>`
-
-e.g.
-```python
 Qgis.WKBPolygon 
 
 # becomes
@@ -106,6 +97,7 @@ Qgis.Success
 
 See also: [QGIS API doc for Qgis.MessageLevel](https://qgis.org/api/classQgis.html#a60c079f4d8b7c479498be3d42ec96257)
 
+and [QGIS breaking changes for QgsMessageLevel](https://qgis.org/api/api_break.html#qgis_api_break_3_0_QgsMessageBar)
 
 ---
 #### AttributeError: type object 'QgsSymbolLayerRegistry' has no attribute 'instance'
@@ -122,6 +114,8 @@ QgsApplication.symbolLayerRegistry()
 
 See also: [QGIS Python API doc for qgis.core.QgsApplication.symbolLayerRegistry()](https://qgis.org/pyqgis/3.2/core/other/QgsApplication.html#qgis.core.QgsApplication.symbolLayerRegistry)
 
+and [QGIS breaking changes for QgsSymbolLayerRegistry](https://qgis.org/api/api_break.html#qgis_api_break_3_0_QgsSymbolLayerRegistry)
+
 
 ---
 #### AttributeError: 'QgisInterface' object has no attribute 'legendInterface'
@@ -136,7 +130,9 @@ iface.legendInterface().setLayerVisible(layer, False)
 QgsProject.instance().layerTreeRoot().findLayer(layer.id()).setItemVisibilityChecked(False)
 ```
 
-See also: [QGIS Python API doc for qgis.core.QgsLayerTreeNode.setItemVisibilityChecked()](https://qgis.org/pyqgis/3.2/core/Layer/QgsLayerTreeNode.html#qgis.core.QgsLayerTreeNode.setItemVisibilityChecked) 
+See also: [QGIS Python API doc for qgis.core.QgsLayerTreeNode.setItemVisibilityChecked()](https://qgis.org/pyqgis/3.2/core/Layer/QgsLayerTreeNode.html#qgis.core.QgsLayerTreeNode.setItemVisibilityChecked)
+
+and [QGIS breaking changes 'Removed Classes' section](https://qgis.org/api/api_break.html#qgis_api_break_3_0_removed_classes)
 
 and [this GIS Stack Exchange answer](https://gis.stackexchange.com/a/272547/106634)
 
@@ -174,6 +170,8 @@ QgsGeometry.fromPointXY(qgs_point_xy)
 
 See also: [QGIS Python API doc for qgis.core.QgsGeometry.fromPointXY()](https://qgis.org/pyqgis/3.2/core/Geometry/QgsGeometry.html#qgis.core.QgsGeometry.fromPointXY)
 
+and [QGIS breaking changes for QgsGeometry](https://qgis.org/api/api_break.html#qgis_api_break_3_0_QgsGeometry)
+
 
 ---
 #### AttributeError: 'QgsGeometry' object has no attribute 'exportToWkt'
@@ -181,6 +179,8 @@ See also: [QGIS Python API doc for qgis.core.QgsGeometry.fromPointXY()](https://
 To fix: replace `.exportToWkt()` with `.asWkt()`
 
 See also: [QGIS Python API doc for qgis.core.QgsGeometry.asWkt()](https://qgis.org/pyqgis/3.2/core/Geometry/QgsGeometry.html#qgis.core.QgsGeometry.asWkt)
+
+and [QGIS breaking changes for QgsGeometry](https://qgis.org/api/api_break.html#qgis_api_break_3_0_QgsGeometry)
 
 
 ---
@@ -206,6 +206,8 @@ layer.setMapTipTemplate(html)
 
 See also: [QGIS Python API doc for qgis.core.QgsVectorLayer.setMapTipTemplate()](https://qgis.org/pyqgis/3.2/core/Vector/QgsVectorLayer.html?#qgis.core.QgsVectorLayer.setMapTipTemplate)
 
+and [QGIS breaking changes for QgsVectorLayer](https://qgis.org/api/api_break.html#qgis_api_break_3_0_QgsVectorLayer)
+
 
 ---
 #### AttributeError: 'QgsVectorLayer' object has no attribute 'setLayerTransparency'
@@ -219,6 +221,10 @@ layer.setLayerTransparency(60)
 # becomes
 layer.setOpacity(0.6)
 ```
+
+See also: [QGIS Python API doc for qgis.core.QgsVectorLayer.setOpacity()](https://qgis.org/pyqgis/3.4/core/Vector/QgsVectorLayer.html#qgis.core.QgsVectorLayer.setOpacity)
+
+and [QGIS breaking changes for QgsVectorLayer](https://qgis.org/api/api_break.html#qgis_api_break_3_0_QgsVectorLayer)
 
 
 ---
@@ -236,6 +242,10 @@ symbol = layer.renderer().symbol()
 ```
 
 See also: [QGIS Python API doc for qgis.core.QgsSingleSymbolRenderer.symbol()](https://qgis.org/pyqgis/3.2/core/Single/QgsSingleSymbolRenderer.html#qgis.core.QgsSingleSymbolRenderer.symbol)
+
+and [QGIS Python API doc for qgis.core.QgsVectorLayer.setRenderer()](https://qgis.org/pyqgis/3.2/core/Vector/QgsVectorLayer.html#qgis.core.QgsVectorLayer.renderer)
+
+and [QGIS breaking changes 'Renamed Methods' section](https://qgis.org/api/api_break.html#qgis_api_break_3_0_renamed_methods)
 
 
 ----
@@ -341,6 +351,8 @@ project.read(project_file)
 
 See also: [QGIS Python API doc for qgis.core.QgsProject.read()](https://qgis.org/pyqgis/3.2/core/Project/QgsProject.html?#qgis.core.QgsProject.read)
 
+and [QGIS breaking changes for QgsProject](https://qgis.org/api/api_break.html#qgis_api_break_3_0_QgsProject)
+
 
 ---
 #### TypeError: QgsRectangle(): arguments did not match any overloaded call:
@@ -365,6 +377,8 @@ QgsRectangle(QgsPointXY(x_min, y_min), QgsPointXY(x_max, y_max)))
 
 See also: [QGIS Python API doc for qgis.core.QgsRectangle](https://qgis.org/pyqgis/3.2/core/other/QgsRectangle.html)
 
+and [QGIS breaking changes 'Renamed Classes' section](https://qgis.org/api/api_break.html#qgis_api_break_3_0_renamed_classes)
+
 
 ---
 #### TypeError: QgsRubberBand.addPoint(): argument 1 has unexpected type 'QgsPoint'
@@ -381,6 +395,7 @@ QgsPointXY(..., ...)
 
 See also: [QGIS Python API doc for qgis.gui.QgsRubberBand.addPoint()](https://qgis.org/pyqgis/3.2/gui/other/QgsRubberBand.html?#qgis.gui.QgsRubberBand.addPoint)
 
+and [QGIS breaking changes 'Renamed Classes' section](https://qgis.org/api/api_break.html#qgis_api_break_3_0_renamed_classes)
 
 
 ## See also:
