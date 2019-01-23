@@ -130,7 +130,7 @@ iface.legendInterface().setLayerVisible(layer, False)
 QgsProject.instance().layerTreeRoot().findLayer(layer.id()).setItemVisibilityChecked(False)
 ```
 
-See also: [QGIS Python API doc for qgis.core.QgsLayerTreeNode.setItemVisibilityChecked()](https://qgis.org/pyqgis/3.2/core/Layer/QgsLayerTreeNode.html#qgis.core.QgsLayerTreeNode.setItemVisibilityChecked),
+See also: [QGIS Python API doc for qgis.core.QgsLayerTreeNode.setItemVisibilityChecked()](https://qgis.org/pyqgis/3.2/core/Layer/QgsLayerTreeNode.html#qgis.core.QgsLayerTreeNode.setItemVisibilityChecked)
 
 and [QGIS breaking changes 'Removed Classes' section](https://qgis.org/api/api_break.html#qgis_api_break_3_0_removed_classes)
 
