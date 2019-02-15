@@ -38,7 +38,7 @@ Qgis.WKBPoint
 QgsWkbTypes.Point
 ```
 
-See also: [QGIS Python API doc for qgis.core.QgsWkbTypes](https://qgis.org/pyqgis/3.4/core/Wkb/QgsWkbTypes.html)
+See also: [QGIS Python API (PyQGIS) doc for qgis.core.QgsWkbTypes](https://qgis.org/pyqgis/3.4/core/Wkb/QgsWkbTypes.html)
 
 and [QGIS breaking changes 'General changes' section](https://qgis.org/api/api_break.html#qgis_api_break_3_0_global)
 
@@ -56,7 +56,7 @@ QgsGeometry.fromMultiPolyline(qgs_point_list)
 QgsGeometry.fromMultiPolylineXY(qgs_point_xy_list)
 ```
 
-See also: [QGIS Python API doc for qgis.core.QgsGeometry.fromMultiPolylineXY()](https://qgis.org/pyqgis/3.4/core/Geometry/QgsGeometry.html#qgis.core.QgsGeometry.fromMultiPolylineXY)
+See also: [QGIS Python API (PyQGIS) doc for qgis.core.QgsGeometry.fromMultiPolylineXY()](https://qgis.org/pyqgis/3.4/core/Geometry/QgsGeometry.html#qgis.core.QgsGeometry.fromMultiPolylineXY)
 
 and [QGIS breaking changes for QgsGeometry](https://qgis.org/api/api_break.html#qgis_api_break_3_0_QgsGeometry)
 
@@ -112,7 +112,7 @@ QgsSymbolLayerRegistry.instance()
 QgsApplication.symbolLayerRegistry()
 ```
 
-See also: [QGIS Python API doc for qgis.core.QgsApplication.symbolLayerRegistry()](https://qgis.org/pyqgis/3.4/core/other/QgsApplication.html#qgis.core.QgsApplication.symbolLayerRegistry)
+See also: [QGIS Python API (PyQGIS) doc for qgis.core.QgsApplication.symbolLayerRegistry()](https://qgis.org/pyqgis/3.4/core/other/QgsApplication.html#qgis.core.QgsApplication.symbolLayerRegistry)
 
 and [QGIS breaking changes for QgsSymbolLayerRegistry](https://qgis.org/api/api_break.html#qgis_api_break_3_0_QgsSymbolLayerRegistry)
 
@@ -130,7 +130,7 @@ iface.legendInterface().setLayerVisible(layer, False)
 QgsProject.instance().layerTreeRoot().findLayer(layer.id()).setItemVisibilityChecked(False)
 ```
 
-See also: [QGIS Python API doc for qgis.core.QgsLayerTreeNode.setItemVisibilityChecked()](https://qgis.org/pyqgis/3.4/core/Layer/QgsLayerTreeNode.html#qgis.core.QgsLayerTreeNode.setItemVisibilityChecked)
+See also: [QGIS Python API (PyQGIS) doc for qgis.core.QgsLayerTreeNode.setItemVisibilityChecked()](https://qgis.org/pyqgis/3.4/core/Layer/QgsLayerTreeNode.html#qgis.core.QgsLayerTreeNode.setItemVisibilityChecked)
 
 and [QGIS breaking changes 'Removed Classes' section](https://qgis.org/api/api_break.html#qgis_api_break_3_0_removed_classes)
 
@@ -150,7 +150,7 @@ iface.legendInterface().selectedLayers()
 iface.layerTreeView().selectedLayers()
 ```
 
-See also: [QGIS Python API doc for qgis.gui.QgsLayerTreeView.selectedLayers()](https://qgis.org/pyqgis/3.4/gui/Layer/QgsLayerTreeView.html#qgis.gui.QgsLayerTreeView.selectedLayers)
+See also: [QGIS Python API (PyQGIS) doc for qgis.gui.QgsLayerTreeView.selectedLayers()](https://qgis.org/pyqgis/3.4/gui/Layer/QgsLayerTreeView.html#qgis.gui.QgsLayerTreeView.selectedLayers)
 
 and [QGIS breaking changes for QgsGeometry](https://qgis.org/api/api_break.html#qgis_api_break_3_0_QgsGeometry)
 
@@ -168,7 +168,7 @@ QgsGeometry.fromPoint(qgs_point)
 QgsGeometry.fromPointXY(qgs_point_xy)
 ```
 
-See also: [QGIS Python API doc for qgis.core.QgsGeometry.fromPointXY()](https://qgis.org/pyqgis/3.4/core/Geometry/QgsGeometry.html#qgis.core.QgsGeometry.fromPointXY)
+See also: [QGIS Python API (PyQGIS) doc for qgis.core.QgsGeometry.fromPointXY()](https://qgis.org/pyqgis/3.4/core/Geometry/QgsGeometry.html#qgis.core.QgsGeometry.fromPointXY)
 
 and [QGIS breaking changes for QgsGeometry](https://qgis.org/api/api_break.html#qgis_api_break_3_0_QgsGeometry)
 
@@ -178,7 +178,7 @@ and [QGIS breaking changes for QgsGeometry](https://qgis.org/api/api_break.html#
 
 To fix: replace `.exportToWkt()` with `.asWkt()`
 
-See also: [QGIS Python API doc for qgis.core.QgsGeometry.asWkt()](https://qgis.org/pyqgis/3.4/core/Geometry/QgsGeometry.html#qgis.core.QgsGeometry.asWkt)
+See also: [QGIS Python API (PyQGIS) doc for qgis.core.QgsGeometry.asWkt()](https://qgis.org/pyqgis/3.4/core/Geometry/QgsGeometry.html#qgis.core.QgsGeometry.asWkt)
 
 and [QGIS breaking changes for QgsGeometry](https://qgis.org/api/api_break.html#qgis_api_break_3_0_QgsGeometry)
 
@@ -204,7 +204,7 @@ layer.setDisplayField(html)
 layer.setMapTipTemplate(html)
 ```
 
-See also: [QGIS Python API doc for qgis.core.QgsVectorLayer.setMapTipTemplate()](https://qgis.org/pyqgis/3.4/core/Vector/QgsVectorLayer.html?#qgis.core.QgsVectorLayer.setMapTipTemplate)
+See also: [QGIS Python API (PyQGIS) doc for qgis.core.QgsVectorLayer.setMapTipTemplate()](https://qgis.org/pyqgis/3.4/core/Vector/QgsVectorLayer.html?#qgis.core.QgsVectorLayer.setMapTipTemplate)
 
 and [QGIS breaking changes for QgsVectorLayer](https://qgis.org/api/api_break.html#qgis_api_break_3_0_QgsVectorLayer)
 
@@ -222,7 +222,7 @@ layer.setLayerTransparency(60)
 layer.setOpacity(0.6)
 ```
 
-See also: [QGIS Python API doc for qgis.core.QgsVectorLayer.setOpacity()](https://qgis.org/pyqgis/3.4/core/Vector/QgsVectorLayer.html#qgis.core.QgsVectorLayer.setOpacity)
+See also: [QGIS Python API (PyQGIS) doc for qgis.core.QgsVectorLayer.setOpacity()](https://qgis.org/pyqgis/3.4/core/Vector/QgsVectorLayer.html#qgis.core.QgsVectorLayer.setOpacity)
 
 and [QGIS breaking changes for QgsVectorLayer](https://qgis.org/api/api_break.html#qgis_api_break_3_0_QgsVectorLayer)
 
@@ -241,9 +241,9 @@ symbol = symbols[0]
 symbol = layer.renderer().symbol()
 ```
 
-See also: [QGIS Python API doc for qgis.core.QgsSingleSymbolRenderer.symbol()](https://qgis.org/pyqgis/3.4/core/Single/QgsSingleSymbolRenderer.html#qgis.core.QgsSingleSymbolRenderer.symbol)
+See also: [QGIS Python API (PyQGIS) doc for qgis.core.QgsSingleSymbolRenderer.symbol()](https://qgis.org/pyqgis/3.4/core/Single/QgsSingleSymbolRenderer.html#qgis.core.QgsSingleSymbolRenderer.symbol)
 
-and [QGIS Python API doc for qgis.core.QgsVectorLayer.setRenderer()](https://qgis.org/pyqgis/3.4/core/Vector/QgsVectorLayer.html#qgis.core.QgsVectorLayer.renderer)
+and [QGIS Python API (PyQGIS) doc for qgis.core.QgsVectorLayer.setRenderer()](https://qgis.org/pyqgis/3.4/core/Vector/QgsVectorLayer.html#qgis.core.QgsVectorLayer.renderer)
 
 and [QGIS breaking changes 'Renamed Methods' section](https://qgis.org/api/api_break.html#qgis_api_break_3_0_renamed_methods)
 
@@ -261,7 +261,7 @@ layer.setRendererV2(renderer)
 layer.setRenderer(renderer)
 ```
 
-See also: [QGIS Python API doc for qgis.core.QgsVectorLayer.setRenderer()](https://qgis.org/pyqgis/3.4/core/Vector/QgsVectorLayer.html#qgis.core.QgsVectorLayer.setRenderer)
+See also: [QGIS Python API (PyQGIS) doc for qgis.core.QgsVectorLayer.setRenderer()](https://qgis.org/pyqgis/3.4/core/Vector/QgsVectorLayer.html#qgis.core.QgsVectorLayer.setRenderer)
 
 
 
@@ -310,7 +310,7 @@ xform = QgsCoordinateTransform(src_crs, dest_crs)
 xform = QgsCoordinateTransform(src_crs, dest_crs, QgsProject.instance())
 ```
 
-See also: [QGIS Python API doc for qgis.core.QgsCoordinateTransform](https://qgis.org/pyqgis/3.4/core/Coordinate/QgsCoordinateTransform.html)
+See also: [QGIS Python API (PyQGIS) doc for qgis.core.QgsCoordinateTransform](https://qgis.org/pyqgis/3.4/core/Coordinate/QgsCoordinateTransform.html)
 
 and [QGIS breaking changes for QgsCoordinateTransform](https://qgis.org/api/api_break.html#qgis_api_break_3_0_QgsCoordinateTransform)
 
@@ -328,7 +328,7 @@ iface.newProject(thePromptToSaveFlag=False)
 iface.newProject(promptToSaveFlag=False)
 ```
 
-See also: [QGIS Python API doc for qgis.gui.QgisInterface.newProject()](https://qgis.org/pyqgis/3.4/gui/other/QgisInterface.html#qgis.gui.QgisInterface.newProject)
+See also: [QGIS Python API (PyQGIS) doc for qgis.gui.QgisInterface.newProject()](https://qgis.org/pyqgis/3.4/gui/other/QgisInterface.html#qgis.gui.QgisInterface.newProject)
 
 
 ---
@@ -349,7 +349,7 @@ project.read(QFileInfo(project_file))
 project.read(project_file)
 ```
 
-See also: [QGIS Python API doc for qgis.core.QgsProject.read()](https://qgis.org/pyqgis/3.4/core/Project/QgsProject.html?#qgis.core.QgsProject.read)
+See also: [QGIS Python API (PyQGIS) doc for qgis.core.QgsProject.read()](https://qgis.org/pyqgis/3.4/core/Project/QgsProject.html?#qgis.core.QgsProject.read)
 
 and [QGIS breaking changes for QgsProject](https://qgis.org/api/api_break.html#qgis_api_break_3_0_QgsProject)
 
@@ -375,7 +375,7 @@ QgsRectangle(QgsPoint(x_min, y_min), QgsPoint(x_max, y_max)))
 QgsRectangle(QgsPointXY(x_min, y_min), QgsPointXY(x_max, y_max)))
 ```
 
-See also: [QGIS Python API doc for qgis.core.QgsRectangle](https://qgis.org/pyqgis/3.4/core/other/QgsRectangle.html)
+See also: [QGIS Python API (PyQGIS) doc for qgis.core.QgsRectangle](https://qgis.org/pyqgis/3.4/core/other/QgsRectangle.html)
 
 and [QGIS breaking changes 'Renamed Classes' section](https://qgis.org/api/api_break.html#qgis_api_break_3_0_renamed_classes)
 
@@ -393,7 +393,7 @@ QgsPoint(..., ...)
 QgsPointXY(..., ...)
 ```
 
-See also: [QGIS Python API doc for qgis.gui.QgsRubberBand.addPoint()](https://qgis.org/pyqgis/3.4/gui/other/QgsRubberBand.html?#qgis.gui.QgsRubberBand.addPoint)
+See also: [QGIS Python API (PyQGIS) doc for qgis.gui.QgsRubberBand.addPoint()](https://qgis.org/pyqgis/3.4/gui/other/QgsRubberBand.html?#qgis.gui.QgsRubberBand.addPoint)
 
 and [QGIS breaking changes 'Renamed Classes' section](https://qgis.org/api/api_break.html#qgis_api_break_3_0_renamed_classes)
 
