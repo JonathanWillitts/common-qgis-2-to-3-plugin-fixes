@@ -4,6 +4,17 @@ Below is a list of fixes to common PyQGIS migration issues I collated whilst mig
 
 
 
+## Table of contents
+* [Error messages and fixes](#error-messages-and-fixes)
+    * [Attribute errors](#attribute-errors)
+    * [Name errors](#name-errors)
+    * [Type errors](#type-errors)
+* [See also](#see-also) (other hints/tips for plugin migration and associated troubleshooting)
+* [Contributions](#contributions)
+* [License](#license)
+
+
+
 ## Error messages and fixes
 
 Details of error messages are documented as sub-headings, with fixes and examples for each listed underneath.  Where possible I've included links back to relevant documentation too.  
@@ -11,7 +22,7 @@ Details of error messages are documented as sub-headings, with fixes and example
 Error messages are listed alphabetically, and as such are organised by error type (`AttributeError`, `NameError`, `TypeError`).  
  
 ---
-### Attribute Errors:
+### Attribute errors:
 #### AttributeError: type object 'Qgis' has no attribute 'Line'
 #### AttributeError: type object 'Qgis' has no attribute 'WKBPoint'
 #### AttributeError: type object 'Qgis' has no attribute 'WKBPolygon'
@@ -266,7 +277,7 @@ See also: [QGIS Python API (PyQGIS) doc for qgis.core.QgsVectorLayer.setRenderer
 
 
 ---
-### Name Errors:
+### Name errors:
 #### NameError: name 'QGis' is not defined
 
 To fix: replace `QGis.xxx` with `Qgis.xxx` (note change in case from `QG` to `Qg`)
@@ -288,7 +299,7 @@ and [QGIS breaking changes for Qgis](https://qgis.org/api/api_break.html#qgis_ap
 
 
 ---
-### Type Errors:
+### Type errors:
 #### TypeError: QgsCoordinateTransform(): arguments did not match any overloaded call:
 
 ```
