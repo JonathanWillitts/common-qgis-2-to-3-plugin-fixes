@@ -1,6 +1,6 @@
 # Fixes to common problems when migrating QGIS plugins from v2.18 to v3.x
 
-Below is a list of fixes to common QGIS migration issues I collated whilst migrating a QGIS 2.18 plugin to QGIS 3.2 (and then to 3.4).  I documented each error message and fix to make things easier if I came across the same issue again, and subsequently figured it may be of user to others who were migrating their plugins too. 
+Below is a list of fixes to common PyQGIS migration issues I collated whilst migrating a QGIS 2.18 plugin to QGIS 3.2 (and then to 3.4). I documented each error message and fix to make things easier if I came across the same issue again, and subsequently figured it may be of user to others who were migrating their plugins too.
 
 
 
