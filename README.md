@@ -4,6 +4,17 @@ Below is a list of fixes to common QGIS migration issues I collated whilst migra
 
 
 
+## Table of contents
+* [Error messages and fixes](#error-messages-and-fixes)
+    * [Attribute errors](#attribute-errors)
+    * [Name errors](#name-errors)
+    * [Type errors](#type-errors)
+* [See also](#see-also) (other hints/tips for plugin migration and associated troubleshooting)
+* [Contributions](#contributions)
+* [License](#license)
+
+
+
 ## Error messages and fixes
 
 Details of error messages are documented as sub-headings, with fixes and examples for each listed underneath.  Where possible I've included links back to relevant documentation too.  
