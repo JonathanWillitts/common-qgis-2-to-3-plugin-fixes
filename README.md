@@ -11,7 +11,7 @@ Details of error messages are documented as sub-headings, with fixes and example
 Error messages are listed alphabetically, and as such are organised by error type (`AttributeError`, `NameError`, `TypeError`).  
  
 ---
-### Attribute Errors:
+### Attribute errors:
 #### AttributeError: type object 'Qgis' has no attribute 'Line'
 #### AttributeError: type object 'Qgis' has no attribute 'WKBPoint'
 #### AttributeError: type object 'Qgis' has no attribute 'WKBPolygon'
@@ -266,7 +266,7 @@ See also: [QGIS Python API doc for qgis.core.QgsVectorLayer.setRenderer()](https
 
 
 ---
-### Name Errors:
+### Name errors:
 #### NameError: name 'QGis' is not defined
 
 To fix: replace `QGis.xxx` with `Qgis.xxx` (note change in case from `QG` to `Qg`)
@@ -288,7 +288,7 @@ and [QGIS breaking changes for Qgis](https://qgis.org/api/api_break.html#qgis_ap
 
 
 ---
-### Type Errors:
+### Type errors:
 #### TypeError: QgsCoordinateTransform(): arguments did not match any overloaded call:
 
 ```
