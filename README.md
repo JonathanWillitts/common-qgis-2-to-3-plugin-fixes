@@ -423,7 +423,7 @@ I also found the [First Aid QGIS plugin](https://plugins.qgis.org/plugins/firsta
 
 ## Contributions:
 
-Contributions are welcome that improve this document, in the form or corrections, changes, additional entries, or anything else you see fit.   Please submit a pull request.
+Contributions to improve this document are welcome, whether in the form or corrections, changes, additional entries, or anything else you see fit.   Please submit a pull request.
 
 
 
